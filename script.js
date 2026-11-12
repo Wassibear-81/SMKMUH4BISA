@@ -28,11 +28,11 @@ const members = [
     nama: "Zen Alfachri",
     umur: "18 Tahun",
     kelas: "XII TKJ 3",
-    hobi: "Suka Gangguin Orang",
-    minat: "Mau jadi orang yang kayak orang",
+    hobi: "Doyan Tidur",
+    minat: "Berorganisasi sampe amnesia",
     intro:
       "Siapa si yang gatau ketum IPM yang ganteng ini,Kenalin ini zen yang suka gangguin orang dan sering tidur.Tapi keren anjr jadi danton paskibraka dan ketum IPM.",
-    detail: "mau makan si paruk",
+    detail: "Si Tampan Dari Kelapa Dua",
     sosmed: {
       instagram: "alfchri12_",
       whatsapp: "6283142086463",
