@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LAPER – Kelompok TKJ 1</title>
+    <meta
+      name="description"
+      content="Perkenalan tujuh siswa TKJ dalam kelompok LAPER."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav__inner">
+        <a href="#beranda" class="brand">LAPER</a>
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          aria-label="Buka menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navMenu" class="nav__menu" aria-label="Navigasi utama">
+          <a href="#beranda">Beranda</a>
+          <a href="#anggota">Anggota</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="beranda" class="hero container">
+        <div class="hero__text">
+          <p class="hero__tag"><span>Kelompok 1</span> SMKM 4 JAKARTA</p>
+          <h1>Kami adalah <span class="grad">LAPER</span></h1>
+          <p class="hero__sub">Kenalan Yuk!</p>
+          <p class="hero__desc">
+            Kami tujuh siswa TKJ dengan hobi dan minat yang berbeda-beda. Ada
+            yang suka gaming, ada yang suka teknologi, dan masing-masing punya
+            cerita sendiri. Yuk, kenali kami satu per satu.
+          </p>
+          <div class="hero__actions">
+            <a href="#anggota" class="btn btn--primary">Kenali Anggota</a>
+            <a href="#tentang" class="btn btn--ghost">Tentang Kami</a>
+          </div>
+        </div>
+        <div
+          class="orbit"
+          id="orbit"
+          role="group"
+          aria-label="Foto tujuh anggota LAPER"
+        ></div>
+      </section>
+
+      <section id="anggota" class="section container">
+        <h2 class="section__title">Meet Our Team</h2>
+        <p class="section__lead">
+          Tujuh anggota, tujuh kepribadian. Klik “Kenalan Lebih Dekat” untuk
+          melihat profil lengkap.
+        </p>
+        <div class="cards" id="cards"></div>
+      </section>
+
+      <section id="tentang" class="section container">
+        <div class="about">
+          <h2 class="section__title">Tentang Kami</h2>
+          <p>
+            LAPER adalah nama sementara kelompok kami, tujuh siswa jurusan
+            Teknik Komputer dan Jaringan (TKJ). Kami berbeda dalam hobi, minat,
+            dan gaya, tapi belajar dan berkarya bersama dalam satu kelompok.
+          </p>
+          <p>
+            Website ini kami buat untuk memperkenalkan diri: siapa kami, apa
+            yang kami suka, dan apa yang ingin kami pelajari.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__msg">
+          Tujuh orang, tujuh cerita, satu kelompok. Terima kasih sudah mengenal
+          kami!
+        </p>
+        <p class="footer__copy">© <span id="year"></span> LAPER · Kelompok 1</p>
+      </div>
+    </footer>
+
+    <dialog id="modal" class="modal" aria-labelledby="modalName">
+      <button class="modal__close" id="modalClose" aria-label="Tutup profil">
+        &times;
+      </button>
+      <div class="modal__body">
+        <div class="modal__photo"><img id="modalPhoto" src="" alt="" /></div>
+        <div class="modal__info">
+          <h3 id="modalName"></h3>
+          <p class="modal__meta" id="modalMeta"></p>
+          <dl>
+            <dt>Hobi</dt>
+            <dd id="modalHobi"></dd>
+            <dt>Minat / bakat</dt>
+            <dd id="modalMinat"></dd>
+            <dt>Perkenalan</dt>
+            <dd id="modalIntro"></dd>
+            <dt>Profil lengkap</dt>
+            <dd id="modalDetail"></dd>
+          </dl>
+          <div class="modal__social" id="modalSocial" hidden>
+            <p class="modal__social-title">Hubungi atau ikuti</p>
+            <div class="social-links" id="modalLinks"></div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
